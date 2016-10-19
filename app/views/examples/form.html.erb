@@ -1,2 +1,8 @@
-<h1>Examples#form</h1>
-<p>Find me in app/views/examples/form.html.erb</p>
+<h1>Bienvenido <%= @nombre %></h1>
+
+<%= form_tag :action => 'form' do %>
+<p>Nombre: 
+<%= text_field_tag 'nombre_usuario', @nombre %> </p>
+<%= submit_tag 'Registrarse' %>
+<% end %>
+  
