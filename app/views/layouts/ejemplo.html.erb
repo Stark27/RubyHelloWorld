@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo</title>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h1>Layout de ejemplo</h1>
+    </header>
+    <%= yield %>
+
+    <p>Este mensaje viene desde el layout de ejemplo</p>
+
+  </body>
+</html>
